@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>GharteyLab</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<!-- Navigation links -->
+		<div class="navbar">
+			<a href="index.html">
+			<img src="images/logo.jpg" alt="Logo" class="logo">
+			</a>
+			<a href="index.html">Home</a>
+			<a href="pi.html">PI</a>
+			<a href="lab.html">Lab Members</a>
+			<a href="projects.html">Projects</a>
+			<a href="publications.html">Publications</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="contact.html" class="active">Contact Us</a>
+		</div>
+		<!-- Navigation links -->
+		<div id="mysidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<!--<a href="index.html">
+			<img src="images/logo.jpg" alt="Logo" class="logo">
+			</a>-->
+			<a href="index.html" class="active">Home</a>
+			<a href="pi.html">PI</a>
+			<a href="lab.html">Lab Members</a>
+			<a href="projects.html">Projects</a>
+			<a href="publications.html">Publications</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="contact.html">Contact Us</a>
+		</div>
+		<span class="opensidenav" onclick="openNav()" style="color: #111;">&#9776;</span>
+		<div class="aside">
+			<h2 class="contact">Contact Us</h2>
+			<hr>
+			<h3>Mail</h3>
+			<p>george.ghartey-kwansah@ucc.edu.gh</p>
+			<h3>Phone</h3>
+			<p>233 (0) 20 810 2012</p>
+			<p>233 (0) 55 585 8861</p>
+	    </div>
+		<footer class="foot" style="padding-top: 1px;">
+			<p class="address">Ghartey-Kwansah Lab • Department of Biomedical Sciences • University of Cape Coast</p><p class="copyright">&copy; <span id ="dt"></span> Ghartey-Kwansah Lab. All Rights Reserved</p> <p class="office">Office: University of Cape Coast• College of Agricultural and Natural Sciences • Below LT1</p>
+		</footer>
+	</body>
+	<script>
+		function openNav() {
+		  document.getElementById("mysidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+		  document.getElementById("mysidenav").style.width = "0";
+		}
+		const d = new Date()
+		document.getElementById("dt").innerHTML = d.getFullYear();
+	</script>
+	 
+</html>

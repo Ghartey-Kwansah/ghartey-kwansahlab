@@ -1,0 +1,204 @@
+html, body {
+   height: 100%;        /* Ensure the full height of the viewport is used */
+   margin: 0;           /* Remove default margin */
+   /*display: flex;*/       /* Use flex layout */
+   /*flex-direction: column;*/ /* Stack children vertically */
+}
+body {
+  width: 100%;                   /* Ensure body takes full width */
+  height: 100vh;
+  /*color: #f5f6f7;*/
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding-top: 0;             /* Ensure content starts below the fixed navbar */
+  margin: 0;
+}
+
+.navbar {
+  position: static;             /* Fix navbar to the top of the page */
+  top: 0;                       /* Stick to the very top */
+  left: 0;                     /* Align to the left edge */
+  width: 100%;                   /* Take full width of the page */
+  /*background-color: #1b1b32df;*/     /* Dark blue background for the navbar */
+  background-color: #1b1b32;
+  padding: 15px 0;               /* Padding for spacing inside the navbar */
+  z-index: 1000;                 /* Ensure navbar stays above other content */
+}
+
+.navbar a {
+  color: #ffffff;                /* Black text */
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 0 15px;                /* Space out the menu items horizontally */
+  display: inline-block;         /* Ensure items are inline */
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar a:hover {
+  color: #f0f0f0;                /* Lighter gray on hover */
+  background-color: #2b2b52;     /* Slightly lighter blue on hover */
+  border-radius: 5px;
+}
+
+.navbar a.active {
+   background-color: #2b2b52;  /* Highlight color for the active tab */
+   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .navbar a {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+   }
+  .about {
+	flex-direction:block;   
+   }
+}
+  
+  .aside {
+   width: 40%;
+}
+}
+
+.top-bg{
+	height: 400px;
+	background-image: url("images/bg1.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	color: #ffffff;
+	margin: 0;
+}
+
+.top-bg h1 {
+	padding-top: 50px;
+}
+
+.about {
+   display: flex; 
+   flex-direction: row;
+   box-sizing: border-box;
+   justify-content: space-between;
+}
+
+.about-content {
+   width: 60%;
+   padding-ringt: 10px;
+}
+   
+.aside {
+   width: 30%;
+   background-color: lightblue;
+}
+.aside p {
+   text-align: center;
+}
+
+h1, h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#more {
+  display: none;
+}
+
+#mybtn {
+  background-color: red;
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-left: 90%;
+}
+
+hr {
+  border: 5px solid #1b1b32df;
+  /*color: #1b1b32df;*/
+}
+
+.container {
+  /*text-align: center;*/            /* Center-aligns content within the container */
+  /*margin-top: 20px;*/
+   padding-right: 50px; 
+   padding-left: 50px
+}
+
+.profilePic {
+  width: 300px;                  /* Adjust size for the image container */
+  height: 300px;                 /* Keep the container square */
+  margin: 20px auto;             /* Center horizontally */
+  overflow: hidden;              /* Clip any image overflow */
+  border-radius: 50%;          /* Make the container circular */
+  display: flex;                 /* Flexbox to center the image */
+  justify-content: center;       /* Center horizontally */
+  align-items: center;           /* Center vertically */
+  background-color: #f0f0f0;     /* Optional background color */
+}
+
+#profilePic {
+  width: 100%;                   /* Ensure the image fills the container */
+  height: 100%;                  /* Ensure the image matches the container height */
+  object-fit: cover;             /* Maintain the aspect ratio and fill the container */
+  display: block;                /* Remove any extra space below the image */
+}
+
+.memberCard {
+  box-shadow: 0 4px 8px 0 rbga(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.address {
+  text-align: left;
+  width: 30%;
+}
+
+.office {
+  text-align: left;
+  width: 30%;
+}
+
+.copyright {
+  text-align: center;
+  width: 25%;
+}
+
+.foot {
+  background-color: #2b2b52;
+  color: #ffffff;
+  padding: 40px 20px;
+  margin-top: 50px;
+  /*padding-bottom: 20px;*/
+  border-top: 1px solid #ddd;
+  box-shadow: 0px -4px 15px rgba(0, 0, 0, 0.02);
+}
+
+.foot p {
+  margin: 10px 0;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.foot .address {
+ /* font-weight: 600;*/
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.logo {
+    height: 40px;                  /* Adjust the height as needed */
+    width: auto;                   /* Maintain the aspect ratio */
+    margin-right: 15px;            /* Add space between the logo and the Home link */
+    vertical-align: middle;        /* Align logo with text vertically */
+}
+
+
+
+.carousel-img-container {
+	width: 30%;
+	height: 500px;
+	margin: auto;
+}
