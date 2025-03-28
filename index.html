@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ghartey-KwansahLab</title>
+		<link rel="icon" type="image" href="images/logo.jpg">
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<!-- Navigation links -->
+		<div class="navbar">
+			<a href="index.html">
+			<img src="images/logo.jpg" alt="Logo" class="logo">
+			</a>
+			<a href="index.html" class="active">Home</a>
+			<a href="pi.html">PI</a>
+			<a href="lab.html">Lab Members</a>
+			<a href="projects.html">Projects</a>
+			<a href="publications.html">Publications</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="contact.html">Contact Us</a>
+		</div>
+		<!-- Navigation links -->
+		<div id="mysidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<!--<a href="index.html">
+			<img src="images/logo.jpg" alt="Logo" class="logo">
+			</a>-->
+			<a href="index.html" class="active">Home</a>
+			<a href="pi.html">PI</a>
+			<a href="lab.html">Lab Members</a>
+			<a href="projects.html">Projects</a>
+			<a href="publications.html">Publications</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="contact.html">Contact Us</a>
+		</div>
+		<div class="top-bg">
+			<span class="opensidenav" onclick="openNav()">&#9776;</span>
+			<h1>GHARTEY-KWANSAH RESEARCH GROUP</h1>
+		</div>
+		<main class="container">
+			<h1>About Us</h1>
+			<p>The Ghartey-Kwansah Laboratory (GGK Lab) focuses on infectious diseases, with an emphasis on parasitic and bacterial infections. Our primary interest lies in Neglected Tropical Diseases (NTDs), which disproportionately affect low-income regions and present significant public health challenges. We investigate their transmission, distribution, and treatment, employing a range of advanced techniques, including molecular and computational screening methods, to advance the management of infectious diseases.</p>
+			<p>Currently, we study <i>Leishmania</i> and <i>Schistosoma</i> parasites, which impact millions worldwide, particularly in underserved regions. We conduct comprehensive parasitology studies to unravel the life cycles, pathogenic mechanisms, and host interactions of these parasites, aiming to develop improved treatments and strategies for disease elimination. Our work integrates advanced molecular biology techniques, such as PCR-based diagnostics, genotyping, and DNA sequencing, for precise identification of pathogens. To accelerate therapeutic discovery, we leverage computational approaches including molecular docking, virtual screening, and molecular dynamics simulations to identify potential antibiotic compounds of natural products origin that can disrupt parasite survival and proliferation. We aim to enhance treatments, deepen understanding, and contribute to global efforts in disease control and elimination.</p>
+			<h1>Collaboration and Opportunities</h1>
+			<p>We believe in the power of collaboration. The GGK Lab welcomes partnerships with fellow researchers, students, and institutions passionate about making strides in parasitology and biomedical sciences. If you're interested in joining our lab or collaborating on a project, please <a href="mailto:george.ghartey-kwansah@ucc.edu.gh">contact us</a> or visit our department at the University of Cape Coast.</p>
+		</main>	
+		<footer class="foot">
+			<p class="address">Ghartey-Kwansah Lab • Department of Biomedical Sciences • School of Allied Health Sciences • University of Cape Coast</p><p class="copyright">&copy; <span id="dt"></span> Ghartey-Kwansah Lab. All Rights Reserved</p> <p class="office">Office: University of Cape Coast• CANS Building • Room 1</p>
+		</footer>
+	</body>
+	<script>
+		function openNav() {
+		  document.getElementById("mysidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+		  document.getElementById("mysidenav").style.width = "0";
+		}
+		const d = new Date()
+		document.getElementById("dt").innerHTML = d.getFullYear();
+	</script>
+	 
+</html>

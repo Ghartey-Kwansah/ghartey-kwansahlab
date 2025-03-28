@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>PI</title>
+	        <link rel="icon" type="image" href="images/logo.jpg">
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+	<!-- Navigation links -->
+		<div class="navbar">
+			<a href="index.html">
+			<img src="images/logo.jpg" alt="Logo" class="logo">
+			</a>
+			<a href="index.html">Home</a>
+			<a href="pi.html" class="active">PI</a>
+			<a href="lab.html">Lab Members</a>
+			<a href="projects.html">Projects</a>
+			<a href="publications.html">Publications</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="contact.html">Contact Us</a>
+		</div>
+		<div id="mysidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<!--<a href="index.html">
+			<img src="images/logo.jpg" alt="Logo" class="logo">
+			</a>-->
+			<a href="index.html" class="active">Home</a>
+			<a href="pi.html">PI</a>
+			<a href="lab.html">Lab Members</a>
+			<a href="projects.html">Projects</a>
+			<a href="publications.html">Publications</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="contact.html">Contact Us</a>
+		</div>
+		<span class="opensidenav" onclick="openNav()" style="color: #111;">&#9776;</span>
+		<header>
+			<h1>Principal Investigator</h1>
+		</header>
+		
+		<main class="container">
+			<div class="members">
+				<div>
+					<img src="images/gharteyProfile.jpg" id="profilePic" style= "width: 450px; height: 360px;" />
+					<p style="text-align: center;">Dr. George Ghartey-Kwansah</p>
+				</div>
+			</div>
+			<br>
+			<h4 style="text-align: center;;">About</h4>
+			<p>Dr. Ghartey-Kwansah had his BSc. in Molecular Biology and Biotechnology in 2008 from the University of Cape Coast, Ghana, and MPhil in Parasitology from the same institution in 2014. He then had his PhD. in Biochemistry and Molecular Biology from The Shaanxi Normal University, China, in 2018.</p> 
+			<p>Dr. Ghartey-Kwansah’s research interests include Infectious Diseases, Bioinformatics and Molecular Cell Biology. In particular, his research interests involve searching for potential drug candidates and targets for <i>Plasmodium</i>, <i>Leishmania</i>, <i>Schistosoma</i>, and other etiological agents of neglected tropical diseases (NTDs). He is also looking at the effect of some potential herbal medicinal plants on both host and parasite gene and protein expressions. Additionally, he is involved in other group research works including the identification of the aetiological agent(s) of Leishmaniasis in the Volta region of Ghana and their susceptibility to selected natural product(s). His research theme emphasizes innovation and impact. Addressing gaps and creating awareness, especially in neglected and underserved communities. He is also an enthusiastic mentor for students and has mentored several undergraduate and postgradute students alike</p>
+			<p>Dr. Ghartey-Kwansah is a reviewer for several high impact scientific jurnals includng Cell Transplantation, BMC Infectious Diseases, Scientific Reports, BMJ, BMJ Open, to mention a few. He is also a member of several prestigious local and international learned bodies including American Society for Microbiology, British Society for Parasitology, African Society for Bioinformatics and Computational Biology, Ghana Science Association and Convention of Biomedical Research Ghana. Dr. Ghartey-Kwansah’s professional goals are to obtain further knowledge in his field and to utilize the knowledge and leadership skills to encourage and promote innovative ideas to advance teaching and research.</p>
+			<h4>Research Interest</h4>
+			<ul>
+				<li>Biochemistry</li>
+				<li>Infectious Diseases</li>
+				<li>Molecular and Cell Biology</li>
+			</ul>
+		</main>
+		<footer class="foot">
+			<p class="address">Ghartey-Kwansah Lab • Department of Biomedical Sciences • School of Allied Health Sciences • University of Cape Coast</p><p class="copyright">&copy; <span id="dt"></span> Ghartey-Kwansah Lab. All Rights Reserved</p> <p class="office">Office: University of Cape Coast• CANS Building • Room 1</p>
+		</footer>
+	</body>
+	<script>
+		function openNav() {
+		  document.getElementById("mysidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+		  document.getElementById("mysidenav").style.width = "0";
+		}
+		const d = new Date()
+		document.getElementById("dt").innerHTML = d.getFullYear();
+	</script>				
+</html>

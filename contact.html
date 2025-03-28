@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Contact</title>
+		<link rel="icon" type="image" href="images/logo.jpg">
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+		<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+	</head>
+	<body>
+		<!-- Navigation links -->
+		<div class="navbar">
+			<a href="index.html">
+			<img src="images/logo.jpg" alt="Logo" class="logo">
+			</a>
+			<a href="index.html">Home</a>
+			<a href="pi.html">PI</a>
+			<a href="lab.html">Lab Members</a>
+			<a href="projects.html">Projects</a>
+			<a href="publications.html">Publications</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="contact.html" class="active">Contact Us</a>
+		</div>
+		<!-- Navigation links -->
+		<div id="mysidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<!--<a href="index.html">
+			<img src="images/logo.jpg" alt="Logo" class="logo">
+			</a>-->
+			<a href="index.html" class="active">Home</a>
+			<a href="pi.html">PI</a>
+			<a href="lab.html">Lab Members</a>
+			<a href="projects.html">Projects</a>
+			<a href="publications.html">Publications</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="contact.html">Contact Us</a>
+		</div>
+		<span class="opensidenav" onclick="openNav()" style="color: #111;">&#9776;</span>
+		<div class="aside">
+			<h2 class="contact">Contact Us</h2>
+			<hr>
+			<h3>Mail</h3>
+			<p>george.ghartey-kwansah@ucc.edu.gh</p>
+			<h3>Phone</h3>
+			<p>233 (0) 20 810 2012</p>
+			<p>233 (0) 55 585 8861</p>
+			<div class="social-icons">
+				<a href="https://www.linkedin.com/company/ggk-lab-molecular-parasitology-lab/" target="_blank"><i class="fab fa-linkedin"></i></a>
+				<a href="https://x.com/ggk_lab?t=F_fA2gyY87VavcgwwsH5aw&s=08" target="_blank"><i class="fab fa-x-twitter"></i></a>
+				<a href="https://facebook.com/yourhandle" target="_blank"><i class="fab fa-facebook"></i></a>
+				<a href="https://youtube.com/yourchannel" target="_blank"><i class="fab fa-youtube"></i></a>
+			</div>
+		</div>
+	    <div id="map" style="height: 500px; width: 100%;"></div>
+		<footer class="foot" style="padding-top: 1px;">
+			<p class="address">Ghartey-Kwansah Lab • Department of Biomedical Sciences • School of Allied Health Sciences • University of Cape Coast</p><p class="copyright">&copy; <span id="dt"></span> Ghartey-Kwansah Lab. All Rights Reserved</p> <p class="office">Office: University of Cape Coast• CANS Building • Room 1</p>
+		</footer>
+	</body>
+	<script>
+		function openNav() {
+		  document.getElementById("mysidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+		  document.getElementById("mysidenav").style.width = "0";
+		}
+		const d = new Date()
+		document.getElementById("dt").innerHTML = d.getFullYear();
+		
+		// Step 2: Initialize the map
+        var map = L.map('map').setView([5.116460678723597, -1.2930661735505724], 17); // Set default location (latitude, longitude) and zoom level
+
+        // Step 3: Add OpenStreetMap tile layer
+	 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Step 4: Add a marker
+        var marker = L.marker([5.116460678723597, -1.2930661735505724]).addTo(map)
+            .bindPopup("CANS Building, University of Cape Coast.")
+            .openPopup();
+		
+	</script>
+	 
+</html>
