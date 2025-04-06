@@ -122,6 +122,107 @@
 					<p>Teaching and Research Assistant.</p>
 				</div>
 			</div>
+			<h2>List of Former and Current Project Students and Teaching and Research Assistants from the Lab</h2>
+			<button class="collapsible">2021</button>
+			<div class="content">
+			  <p>
+				Andrew Opoku Bentil<br>
+				Bless Amankwah<br>
+				Gideon Dartwey Appiah<br>
+				Susana Buabeng<br>
+				Paul Adamptey<br>
+				Emmanuel Baah<br>
+				Kwame Agyapong<br>
+				Julius Yelbert
+			  </p>
+			</div>
+
+			<button class="collapsible">2022</button>
+			<div class="content">
+			  <p>
+				Abigail Agyen Frimpong<br>
+				Emmanuella Abban<br>
+				Emmanuel Adu Sarpong<br>
+				Esther Atuley<br>
+				Pius Kwesi Sam<br>
+				Porschier Marfo Aninagyei<br>
+				Sou'ad Sae'ed<br>
+				Tutuwaa Badu<br>
+				Upright Akumanyi
+			  </p>
+			</div>
+
+			<button class="collapsible">2023</button>
+			<div class="content">
+			  <p>
+				Nicholas Donkor<br>
+				Prince Adusei<br>
+				Godfred Dey<br>
+				Josephine Amoah<br>
+				Gladys Okyerewaa Martey<br>
+				Alberta Amoah Asante<br>
+				Tebson Haruna<br>
+				Rose Akpene<br>
+				Emmanuella Nkrumah<br>
+				Michael Asare<br>
+				Abdul-Samad Alhassan<br>
+				Paul Kwarteng<br>
+				Emmanuel Benyin<br>
+				Mataniah Abugre<br>
+				Amofa Sakyi<br>
+				Patience Okaikor Ayaah<br>
+				Gerald Duah Adu-Broni<br>
+				Botchwey Edward Junior
+			  </p>
+			</div>
+
+			<button class="collapsible">2024</button>
+			<div class="content">
+			  <p>
+				Richard Appiah Amponsah<br>
+				Cosmos Agyenim Boateng<br>
+				Daniel Lotsa<br>
+				Yvonne Mohammed<br>
+				Akrofi Melkizadeth<br>
+				Adwoa Marfoa Anim<br>
+				Owusu William<br>
+				Sheila Oye Mensah<br>
+				Abigail Nyarko<br>
+				Esuuman Godfrey<br>
+				Ethel Dede Barke<br>
+				Asiamah Prince Kwame<br>
+				Elijah Buah<br>
+				Theodora Akosua Kpormego<br>
+				Herbert Adjei<br>
+				David Tsatsu Awadzie<br>
+				Frank Agyei<br>
+				Prince Anaglatey
+			  </p>
+			</div>
+
+			<button class="collapsible">2025</button>
+			<div class="content">
+			  <p>
+				Wendy Larbi<br>
+				Sodzah Godson<br>
+				Mensah Emmanuel<br>
+				Sekyi Dorcas<br>
+				Ggloria Hagan<br>
+				Oladipupo oliver-Peace Tijesuni<br>
+				Cobbinah Jonathan<br>
+				Henry Owusu Agyei<br>
+				Lawrence Agyemang Duah<br>
+				Efua Turkson<br>
+				Patience Frimpong<br>
+				Emmanuel Benyin<br>
+				Theodora Akosua Kpormego<br>
+				Herbert Adjei<br>
+				David Tsatsu Awadzie<br>
+				Gerald Duah Adu-Broni<br>
+				Frank Agyei<br>
+				Botchwey Edward Junior
+			  </p>
+			</div>
 		</main>
 		<footer class="foot">
 			<p class="address">Ghartey-Kwansah Lab • Department of Biomedical Sciences • School of Allied Health Sciences • University of Cape Coast</p><p class="copyright">&copy; <span id="dt"></span> Ghartey-Kwansah Lab. All Rights Reserved</p> <p class="office">Office: University of Cape Coast• CANS Building • Room 1</p>
@@ -137,5 +238,20 @@
 		}
 		const d = new Date()
 		document.getElementById("dt").innerHTML = d.getFullYear();
+		
+		document.addEventListener("DOMContentLoaded", function () {
+			const collapsibles = document.querySelectorAll(".collapsible");
+			collapsibles.forEach(btn => {
+			  btn.addEventListener("click", function () {
+				this.classList.toggle("active");
+				const content = this.nextElementSibling;
+				if (content.style.display === "block") {
+				  content.style.display = "none";
+				} else {
+				  content.style.display = "block";
+				}
+			  });
+			});
+		  });
 	</script>
 </html>
