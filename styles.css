@@ -303,3 +303,37 @@ div.card {
     border-left: 2px solid #ccc;
     margin-bottom: 10px;
   }
+
+.ntd-post {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  line-height: 1.7;
+}
+
+.ntd-post h1 {
+  margin-bottom: 0.5rem;
+}
+
+.post-meta {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.featured-image {
+  margin: 2.5rem 0;
+  text-align: center;
+}
+
+.featured-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.featured-image figcaption {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
